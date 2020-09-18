@@ -1,0 +1,17 @@
+{
+  "name": "charjabugdiscord",
+  "version": "1.0.0",
+  "description": "repeator",
+  "main": "charjabug.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Owen Radley Guinto Castro",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "npm-git-install": "^0.3.0",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^3.2.2"
+  }
+}
