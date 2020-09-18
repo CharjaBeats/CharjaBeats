@@ -18,6 +18,8 @@ var voiceChannel = null;
 var skipReq = 0;
 var skippers = [];
 
+// test
+
 clientInformation.onLine("message", function (message){
     const member = message.member;
     const mess = message.content.toLowerCase();
