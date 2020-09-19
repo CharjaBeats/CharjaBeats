@@ -26,7 +26,7 @@ client.once('reconnecting', () => {
  
 client.on("message", async message => {
 
-  const command = args.shift().toLowerCase();
+  /*const command = args.shift().toLowerCase();
 
     // Easter eggs
     if (command === "charja"){
@@ -37,6 +37,7 @@ client.on("message", async message => {
         message.channel.send("1. No verbal abuse 2. Please no spamming 3. If you are planning on inviting someone, please notify me first 4. Inappropriate images and photos will result in a kick 5. joining Jolt Skifts without permission will result in two warnings 6. Three warnings will result in a kick 7. Do not make fun of other people's skin in Jolt Plains unless they actually want to be 8. Do not gang up on other users 9. do not spam commands")
     };
     // Easter Eggs [end]
+    */
 
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
@@ -65,6 +66,7 @@ client.on("message", async message => {
       return message.channel.send(
         "You need to be in a voice channel to play music!"
       );
+
     const permissions = voiceChannel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
       return message.channel.send(
@@ -120,7 +122,7 @@ client.on("message", async message => {
         return message.channel.send(err);
       }
     } 
-  
+  //
   
   function skip(message, serverQueue) {
     if (!message.member.voice.channel)
@@ -157,7 +159,7 @@ client.on("message", async message => {
       })
       .on("error", error => console.error(error));
     dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-    serverQueue.textChannel.send(`Start playing: **${song.title}**`);
+    serverQueue.textChannel.send(`Now playing: **${song.title}**`);
   }
   
 
